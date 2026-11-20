@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101322">
+  <meta name="description" content="A free, privacy-first JSON formatter, validator and minifier, plus practical free domain and hosting guides.">
+  <title>JSON Toolkit — Format, Validate & Minify</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="JSON Toolkit home"><span class="brand-mark">{ }</span> JSON Toolkit</a>
+    <nav aria-label="Main navigation"><a href="#tool">JSON Tool</a><a href="#domains">Free Domains</a><a href="#about">About</a></nav>
+    <span class="privacy-pill">● Runs locally</span>
+  </header>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">FREE · OPEN SOURCE · PRIVACY FIRST</p>
+      <h1>Make JSON <span>beautiful.</span></h1>
+      <p class="hero-copy">Format, validate and minify JSON in your browser. Your data stays on your device.</p>
+      <a class="primary-link" href="#tool">Open the toolkit <span aria-hidden="true">↓</span></a>
+      <div class="hero-note"><span>✦</span> No account · No API key · No uploads</div>
+    </section>
+    <section class="tool-section" id="tool">
+      <div class="section-heading"><div><p class="eyebrow">DEVELOPER WORKSPACE</p><h2>JSON workspace</h2></div><span class="local-tag">LOCAL PROCESSING</span></div>
+      <div class="toolbar">
+        <label class="control-label" for="indent">Indent</label>
+        <select id="indent" aria-label="Indentation"><option value="2">2 spaces</option><option value="4">4 spaces</option><option value="tab">Tab</option></select>
+        <button id="format" class="action-button" type="button">Format</button>
+        <button id="minify" class="action-button" type="button">Minify</button>
+        <button id="validate" class="action-button secondary" type="button">Validate</button>
+        <button id="copy" class="action-button secondary" type="button">Copy output</button>
+        <button id="clear" class="action-button ghost" type="button">Clear</button>
+      </div>
+      <div class="editor-grid">
+        <div class="editor-panel"><div class="panel-head"><label for="input">INPUT JSON</label><button id="sample" class="text-button" type="button">Load sample</button></div><textarea id="input" spellcheck="false" autocapitalize="off" autocomplete="off" placeholder='{"hello":"world","items":[1,2,3]}' aria-describedby="input-help"></textarea><p id="input-help" class="hint">Paste or type JSON here. Processing stays in this browser.</p></div>
+        <div class="editor-panel"><div class="panel-head"><label for="output">OUTPUT</label><span id="status" class="status" role="status" aria-live="polite">Waiting for JSON</span></div><textarea id="output" spellcheck="false" readonly placeholder="Your formatted JSON will appear here"></textarea><p class="hint">Output is read-only. Use Copy output to copy it.</p></div>
+      </div>
+      <p id="message" class="message" role="status" aria-live="polite"></p>
+    </section>
+    <section class="domains-section" id="domains">
+      <div class="section-heading"><div><p class="eyebrow">PUBLISH WITHOUT THE PRICE TAG</p><h2>Free domain & hosting guide</h2></div></div>
+      <p class="section-intro">Start with a free platform subdomain, publish a static site, and connect a custom domain later if you own one.</p>
+      <div class="domain-grid">
+        <article class="domain-card"><span class="card-icon">⌘</span><h3>GitHub Pages</h3><p>Host static websites from a GitHub repository with a free <code>github.io</code> address.</p><a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">Official guide ↗</a></article>
+        <article class="domain-card"><span class="card-icon">◈</span><h3>Cloudflare Pages</h3><p>Deploy static sites and use a free <code>pages.dev</code> subdomain.</p><a href="https://pages.cloudflare.com/" target="_blank" rel="noopener noreferrer">Official guide ↗</a></article>
+        <article class="domain-card"><span class="card-icon">▲</span><h3>Netlify</h3><p>Deploy web projects and get a platform-provided <code>netlify.app</code> subdomain.</p><a href="https://www.netlify.com/products/overview/" target="_blank" rel="noopener noreferrer">Official guide ↗</a></article>
+      </div>
+      <div class="notice"><strong>Good to know:</strong> A free platform subdomain is not the same as owning a custom domain. Custom domains, renewals and some platform features may cost money. Always check current provider terms and pricing.</div>
+      <a class="guide-link" href="docs/free-domains-and-hosting.md">Read the full free domain & hosting guide →</a>
+    </section>
+    <section class="about-section" id="about"><p class="eyebrow">BUILT FOR EVERYONE</p><h2>Useful tools. Fewer barriers.</h2><p>Open source, free to use, and designed to keep your JSON private. No artificial usage limits are added by this project; hosting providers and your device still have their own limits.</p><div class="feature-row"><span>✓ Browser-based</span><span>✓ No API keys</span><span>✓ Mobile friendly</span><span>✓ MIT licensed</span></div></section>
+  </main>
+  <footer><span>JSON Toolkit · Open source</span><a href="https://github.com/shanraku/json-formatter-validator" target="_blank" rel="noopener noreferrer">View source on GitHub ↗</a></footer>
+</body>
+</html>
